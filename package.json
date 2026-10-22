@@ -1,0 +1,32 @@
+{
+  "name": "dsh-clash-mcp",
+  "version": "1.0.0",
+  "description": "Zero-dependency MCP server for Clash Verge Rev / mihomo over the Windows named-pipe controller",
+  "type": "module",
+  "bin": {
+    "dsh-clash-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node server.mjs --check",
+    "test": "node test-mcp.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "clash",
+    "clash-verge",
+    "clash-verge-rev",
+    "mihomo",
+    "proxy",
+    "named-pipe"
+  ],
+  "license": "MIT"
+}
