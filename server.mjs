@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * dsh-clash-mcp
+ * Clash-Verge-MCP
  * Clash Verge Rev / mihomo 的零依赖 MCP 服务器（stdio）。
  *
  * 原理：新版 Clash Verge Rev 默认不开放 TCP external-controller，
