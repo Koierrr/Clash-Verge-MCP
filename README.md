@@ -1,4 +1,4 @@
-# dsh-clash-mcp
+# Clash-Verge-MCP
 
 A **zero-dependency** [MCP](https://modelcontextprotocol.io) server for **Clash Verge Rev / mihomo** on Windows.
 Single file, no `npm install`, no build step — and it talks to the mihomo controller over its **Windows named pipe**,
@@ -46,7 +46,7 @@ and probes them, so it works in both modes and survives a core restart or a mode
 ## Install
 
 ```bash
-git clone https://github.com/Koierrr/dsh-clash-mcp.git
+git clone https://github.com/Koierrr/Clash-Verge-MCP.git
 ```
 
 That's it. No dependencies.
@@ -77,7 +77,7 @@ Generic stdio entry (use forward slashes or escape backslashes in JSON):
   "mcpServers": {
     "clash": {
       "command": "node",
-      "args": ["C:/path/to/dsh-clash-mcp/server.mjs"]
+      "args": ["C:/path/to/Clash-Verge-MCP/server.mjs"]
     }
   }
 }
@@ -86,7 +86,7 @@ Generic stdio entry (use forward slashes or escape backslashes in JSON):
 **Claude Code**
 
 ```bash
-claude mcp add clash --scope user -- node C:/path/to/dsh-clash-mcp/server.mjs
+claude mcp add clash --scope user -- node C:/path/to/Clash-Verge-MCP/server.mjs
 ```
 
 **DSH (DeepSeek Harness)** — via the `dsh-mcp-connector` plugin:
@@ -97,7 +97,7 @@ claude mcp add clash --scope user -- node C:/path/to/dsh-clash-mcp/server.mjs
   "serverName": "clash",
   "transport": "stdio",
   "command": "C:\\Program Files\\nodejs\\node.exe",
-  "args": ["C:\\path\\to\\dsh-clash-mcp\\server.mjs"],
+  "args": ["C:\\path\\to\\Clash-Verge-MCP\\server.mjs"],
   "env": { "ELECTRON_RUN_AS_NODE": "1" }
 }
 ```
